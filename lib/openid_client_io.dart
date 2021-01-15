@@ -22,7 +22,7 @@ class Authenticator {
             ? Flow.authorizationCodeWithPKCE(client)
             : Flow.authorizationCode(client)
           ..scopes.addAll(scopes)
-          ..redirectUri = redirectUri ?? Uri.parse('http://localhost:$port/');
+          ..redirectUri = redirectUri ?? Uri.parse('hsegestorchamados://localhost:$port/');
 
   Future<Credential> authorize() async {
     var state = flow.authenticationUri.queryParameters['state'];

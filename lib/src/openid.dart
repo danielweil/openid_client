@@ -327,7 +327,7 @@ class Flow {
 
   final String state;
 
-  Uri redirectUri = Uri.parse('http://localhost');
+  Uri redirectUri = Uri.parse('hsegestorchamados://localhost');
 
   Flow._(this.type, this.responseType, this.client, {String state})
       : state = state ?? _randomString(20) {
